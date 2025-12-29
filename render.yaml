@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: telegram-video-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        value: 7555240264:AAHeRCnbGIjGMEq8To1Cx74vICy3Qf4jiZY
+      - key: API_ID
+        value: 24663402
+      - key: API_HASH
+        value: 3ca4ba0a56c360004a0048d51d385529
+    plan: standard
+    autoDeploy: true
